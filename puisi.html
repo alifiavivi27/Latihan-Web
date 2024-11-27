@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="tulis.css">
+	<link rel="icon" type="images/x-icon" href="/tugas/imagesuts/av.jpeg">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet">
+
+	<title>My Paragraph</title>
+</head>
+<body>
+	<nav>
+		<div class="logo"><h1>My Paragraph</h1></div>
+		<ul class="menu">
+			<li><a  href="http://localhost/tugas/myhome.html">Home</a></li>
+			<li><a href="http://localhost/tugas/aboututs.html">About</a></li>
+			<li><p>Blog &#x25BE;</p>
+			<ul class="dropdown">
+				<li><a href="http://localhost/Tugas/tipsuts.html">Tips</a></li>
+				<li><a class="active" href="http://localhost/Tugas/puisi.html">Poetry</a></li>
+				<li><a href="http://localhost/Tugas/cerpen.html">Story</a></li>	
+			</ul>
+			</li>
+			<li><a href="http://localhost/tugas/galeri.html">Gallery</a></li>
+			<li><a href="http://localhost/tugas/calluts.html">Contact &#x25BE;</a>
+				<ul class="dropdown">
+					<li><a href="http://localhost/tugas/regist.html">Regist</a></li>	
+				</ul>
+			</li>
+		</ul>
+	</nav>
+<body>
+	<h2 align="center">Poetry</h2>
+	<div class="cliff">
+		<div class="poem">
+			<img src="/tugas/imagesuts/ta.jpg" style="border-radius:10px;width: 500px;">
+			<h2>Euforia</h2>
+			<p>Euforia fantasi menyelimuti<span id="dot">...</span><br><span id="more">Tak mau bangun, apalagi pergi<br>Kepala penuh hamburan mimpi<br>Terus berimajinasi<br><br>Euforia fantasi menyelimuti<br>Tak mau berjalan, apalagi berlari<br>Hidupnya penuh lingkar ilusi<br>Enggan tuk dilewati<br><br>Euforia fantasi menyelimuti<br>Tak mau berkawan, apalagi diseminasi<br>Terlalu mencintai pribadi<br>Selalu menutup diri</span></p>
+			<button onclick="myFunction()" id="myBtn">Read more</button>
+		</div>
+	</div>
+	<div class="cliff">
+		<div class="poem">
+			<img src="/tugas/imagesuts/ku.jpg" style="border-radius:10px;width: 500px;">
+			<h2>Sunyi</h2>
+			<p>Langit malam penuh bintang<span id="dots">...</span><br><span id="mor">Awan abu melayang-layang<br>Angin berhembus kian tenang<br>Sunyi sepi terbayang<br><br>Para jangkrik bersenda gurau<br>Burung hantu meracau<br>Mata terpejam<br>Telinga menajam<br><br>Sunyi yang damai<br>Tiada kiacauan manusia berisik<br>Tiada deru mesin yang mengusik<br>Hanya alam yang permai</span></p>
+			<button onclick="myNotion()" id="myBin">Read more</button>
+		</div>
+	</div>
+	
+	<script>
+		function myFunction() {
+			var dots = document.getElementById("dot");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more"; 
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less"; 
+				moreText.style.display = "inline";
+			}
+		}
+		function myNotion() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("mor");
+			var btnText = document.getElementById("myBin");
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more"; 
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less"; 
+				moreText.style.display = "inline";
+			}
+		}
+	</script>
+</body>
+<footer>
+	<div class="container">
+		<div class="footer-place">
+			<h3>Place</h3>
+			<i class="bi bi-geo-alt"><span>Indonesia, Jakarta</span></i><br>
+			<i class="bi bi-telephone"><span>+62 0822 1021 1577</span></i><br>
+			<i class="bi bi-envelope"><span><a href="siti.alifia22@mhs.ac.id">siti.alifa22@mhs.ac.id</a></span></i>
+		</div>
+		<div class="footer-bottom">
+			<p>Copyright &copy; 2024 Designed by <span class="designer">Siti Alifia Machmud</span></p>
+		</div>
+	</div>
+</footer>
+</html>
